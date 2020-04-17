@@ -1,0 +1,128 @@
+@media (min-width: 640px) {
+  html {
+    font-size: 8px;
+  }
+
+  .titleProducts {
+    padding: 4rem;
+  }
+
+  .products {
+    padding: 0 5rem;
+  }
+
+  .product {
+    width: 31.5%;
+    margin-right: 1%;
+  }
+
+  .product:first-child {
+    margin-left: 1%;
+  }
+
+  #nav-icons li:not(:last-child) {
+    display: block;
+  }
+
+  .home {
+    display: block;
+  }
+
+  #productsTab {
+    display: block;
+  }
+
+  #supportTab {
+    display: block;
+  }
+
+  .divheader {
+    text-align: right;
+    padding-right: 3rem;
+  }
+
+  header h1 {
+    font-size: 4.5rem;
+  }
+
+  #fa-bars {
+    display: none;
+    margin-right: 0;
+  }
+
+  .fa-search {
+    margin-right: 3rem;
+  }
+
+  .fa-shopping-cart {
+    margin-right: 3rem;
+  }
+
+  .presentation {
+    width: 30%;
+    font-size: 3.2rem;
+    background-color: #202427;
+    opacity: 0.9;
+    width: 30%;
+    top: 15%;
+    right: 13%;
+  }
+
+  .imageBanner {
+    width: 50%;
+    margin-left: 13%;
+  }
+
+  .callToAction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bannerPromotion h3 {
+    padding-bottom: 2rem;
+  }
+
+  .bannerPromotion .button {}
+
+  .discountTag {
+    left: 41%;
+  }
+
+  footer .container {
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .contact {
+    padding-left: 13rem;
+  }
+
+  .divform, .info, .social {
+    margin-right: 2%;
+    width: 32%;
+  }
+
+  .labelFooter {
+    padding-left: 1rem;
+  }
+
+  .message {
+    padding-left: 4.5rem;
+  }
+
+  .emailname {
+    text-align: left;
+    padding-left: 3.3rem;
+  }
+
+  .divtextarea, {
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  #attach {
+    left: 49rem;
+  }
+}

@@ -1,0 +1,487 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 6px;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: Montserrat;
+}
+
+h1, a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #FFDF3B;
+  transition: ease 0.3s;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+i {
+  font-size: 6.5rem;
+}
+
+section {
+  text-align: center;
+}
+
+.productimage {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*navbar*/
+nav {
+  width: 100%;
+  font-family: Montserrat;
+  background-color: #2C3E50;
+  color: #fff;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  position: fixed;
+  z-index: 2;
+}
+
+nav .container {
+  /* display: flex; */
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+#logo-box, #productsTab {
+  margin-right: 5rem;
+}
+
+a>i {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.home {
+  list-style-type: none;
+  display: none;
+  margin-right: 5rem;
+}
+
+#supportTab {
+  margin-right: 20rem;
+  display: none;
+}
+
+#productsTab {
+  display: none;
+}
+
+#slogan {
+  font-size: 2rem;
+  color: #FFDF3B;
+}
+
+#logo-box {
+  display: block;
+}
+
+#imglogo {
+  width: 12rem;
+}
+
+#nav-icons ul {
+  display: flex;
+}
+
+#nav-icons .nav-item {
+  margin-left: .4rem;
+}
+
+#nav-icons .nav-icon {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: block;
+  padding: 0rem;
+  transition: color .3s;
+}
+
+#nav-icons .nav-icon:hover {
+  color: #FFDF3B;
+}
+
+#nav-icons li:not(:last-child) {
+  display: none;
+}
+
+.nav-menu-item {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+span {
+  padding-left: 5rem;
+}
+
+/*Header*/
+header {
+  background-image: url("../images/bg-header.jpg");
+  background-size: cover;
+  padding-top: calc(80px + 22rem);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.divheader {
+  color: #fff;
+  text-align: left;
+  padding-left: 3rem;
+}
+
+.anchor p {
+  text-align: right;
+  padding-right: 1.5rem;
+  color: #FFDF3B;
+  opacity: 0.7;
+}
+
+.anchor {
+  position: fixed;
+  right: 0;
+  bottom: 5rem;
+  z-index: 1;
+}
+
+/* main */
+/* section */
+section .container {
+  display: block;
+}
+
+.containerBannerPresentation {
+  position: relative;
+}
+
+.presentation {
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 2rem;
+  position: absolute;
+  top: -1rem;
+}
+
+.presentation h4 {
+  padding: 3rem 1rem;
+  font-weight: 700;
+  color: #ebedea;
+}
+
+.bannerPromotion h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #black;
+  padding: 2rem 3rem 0 3rem;
+}
+
+.bannerPromotion .button {
+  margin: 3rem;
+}
+
+.callToAction {
+  background-color: #FFDF3B;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#buttonBanner {
+  background-color: #202427;
+  color: #fff;
+}
+
+#buttonBanner:hover {
+  background-color: #484b4e;
+  color: #fff;
+}
+
+/* products */
+del.price {
+  font-size: 3rem;
+}
+
+.titleProducts {
+  padding-top: 3rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 2rem;
+}
+
+.modelname {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.modeldetail {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 2rem;
+}
+
+.price {
+  font-size: 4.1rem;
+  padding-top: 1rem;
+}
+
+.product {
+  justify-content: center;
+  width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #e7eae6;
+  padding-top: 2.2rem;
+}
+
+.divimageproduct {
+  position: relative;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 99%;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.img-overlay .icon-overlay {
+  color: #pink;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.divimageproduct:hover .img-overlay {
+  opacity: 0.6;
+}
+
+.discountTag {
+  display: flex;
+  position: absolute;
+  bottom: 3%;
+  left: 47.3%;
+}
+
+.rectangle {
+  padding: 5.45%;
+  display: inline-block;
+  background-color: #FFDF3B;
+}
+
+.rectangle li {
+  list-style-type: disc;
+}
+
+.triangle {
+  border-right: 3.1rem solid #FFDF3B;
+  border-left: 3.1rem solid transparent;
+  border-top: 3.1rem solid transparent;
+  border-bottom: 3.1rem solid transparent;
+  display: inline-block;
+  width: 0;
+  height: 0;
+}
+
+.button {
+  color: #202427;
+  background-color: #FFDF3B;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 1rem 4.1rem;
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: .4rem;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.button:hover {
+  background-color: #baa32b;
+}
+
+/* advantages */
+.divadvantages {
+  margin-top: 5rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  line-height: 1;
+  background-color: #EAE8E7;
+}
+
+.divadvantages p {
+  padding-top: 0.5em;
+  font-size: 2rem;
+}
+
+/*Footer*/
+footer {
+  background-color: #2C3E50;
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 4rem;
+}
+
+.input, textarea {
+  border-style: none;
+  border-radius: 3px;
+}
+
+footer .container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.emailname .textarea {
+  width: 100%;
+}
+
+textarea {
+  width: 40rem;
+  resize: none;
+}
+
+.divtextarea {
+  position: relative;
+}
+
+.contact {
+  font-size: 2.4rem;
+  text-align: left;
+  padding-left: 16rem;
+}
+
+.labelFooter {
+  text-align: left;
+  padding: 2rem 0 0 6rem;
+}
+
+footer i {
+  font-size: 3rem;
+  color: #fff;
+}
+
+#attach {
+  font-size: 3rem;
+  position: absolute;
+  bottom: .5rem;
+  left: 46rem;
+}
+
+.fa-paperclip {
+  color: #2C3E50;
+}
+
+footer p {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+footer a {
+  font-size: 1.4rem;
+}
+
+footer a:hover {
+  color: #FFDF3B;
+  transition: ease 0.3s;
+}
+
+footer div {
+  padding: 0;
+}
+
+.input {
+  margin: 1rem;
+  width: 40rem;
+  height: 3.5rem;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.footerButton-social {
+  width: 5rem;
+  height: 5rem;
+  border: 0.2rem #fff solid;
+  border-radius: 50%;
+  font-size: 2rem;
+  line-height: 2rem;
+  background-color: transparent;
+}
+
+.footerButton-social:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.emailname {
+  padding-bottom: 1rem;
+}
+
+.social ul {
+  padding: 1rem;
+  line-height: 6rem;
+  justify-content: center;
+}
+
+.social {
+  text-align: center;
+}
